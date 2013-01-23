@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html> 
+　<head>
+	<title></title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link href='css/JPictureRotary.css' rel='stylesheet'/>
+	<link href='css/style.css' rel='stylesheet'/>
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.mobile-1.2.0.min.js"></script>
+	<script type="text/javascript" src="js/JPictureRotary.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		$(".pictureContainer").JPictureRotary({
+			animationSpeed: "slow",
+			delay:3,
+		});
+	});
+	</script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<h2>Home Page</h2>
+			<a href="#" class="ui-btn-right">Click</a>
+		</div>
+		<div data-role="content"> 
+			<ul class="pictureContainer">
+				<li><img src="img/image1.jpg" /></li>
+				<li><img src="img/image2.jpg" alt="Venice Beach, California" /></li>
+				<li><img src="img/image3.jpg" </li>
+				<li><img src="img/image4.jpg" alt="Universal Studios"/></li>
+				<li><img src="img/image5.jpg" alt="Hollywood Sign" /></li>
+			</ul>
+			<div id="imgContent">
+				<ul data-role="listview" >
+					<ul data-role="listview">
+						<li>
+							<img src="img/Snikt.png" />
+							<h3>Broken Bells</h3>
+							<p>Broken Bells</p>
+						</li>
+						<li>
+							<img src="img/Snikt.png" />
+							<h3>Warning</h3>
+							<p>Hot Chip</p>
+						</li>
+						<li>
+							<img src="img/Snikt.png" />
+							<h3>Wolfgang Amadeus Phoenix</h3>
+							<p>Phoenix</p>
+						</li>
+					</ul>
+				</ul>
+			</div>
+
+		</div>
+
+		<!-- /content -->
+		<div data-role="footer">
+			<div data-role="navbar" data-iconpos="top" data-position="fixed"> 
+				<ul>
+					<li> <a href="#" class="ui-btn-active" data-icon="gear"></a></li>
+					<li> <a href="#" data-transition="fade" data-icon="plus"></a></li>
+					<li> <a href="#" data-transition="fade" data-icon="star"></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /footer -->
+	</div><!-- /page -->
+</body>
+</html>
